@@ -6,3 +6,14 @@ block content
   a.btn(href='#') Press
   p styled button
   button(type="button", class="btn btn-secondary") Left
+  div#faster Add in extra
+
+script.
+      let value = 1;
+      let amt = 2;
+
+      function faster() {
+        amt *= 2;
+        value += amt;
+        document.getElementById("faster").innerText = `Faster ${value} times ${amt}`;
+      }
